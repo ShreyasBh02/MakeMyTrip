@@ -6,10 +6,8 @@
       <class name="Test.test">
         <methods>
           <include name="closeBrow"/>
-          <include name="verifyText1"/>
           <include name="logout"/>
-          <include name="verifyText3"/>
-          <include name="verifyText2"/>
+          <include name="verifyText4"/>
           <include name="OpenBrowser"/>
           <include name="OpenApp"/>
         </methods>
