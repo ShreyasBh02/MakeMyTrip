@@ -66,7 +66,9 @@ public class test extends base{
 	}
 	@Test
 	public void verifyText4() throws Throwable {
-		String actTit = t4.vtitle();
+		Thread.sleep(5000);
+		t4.vtitle(driver);
+		String actTit=t4.vtitle(driver);
 		String expTit = utility.getTD(7,1);
 		SoftAssert soft=new SoftAssert();
 		soft.assertEquals(actTit, expTit,"TC is passed");
