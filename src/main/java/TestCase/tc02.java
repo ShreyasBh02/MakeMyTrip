@@ -32,6 +32,9 @@ public class tc02 {
 	}
 	public void verifyText2(WebDriver driver) {
 		boolean text= text2.isDisplayed();
-		System.out.println(text +"'Upto 9 passengers allowed' not found");
+		if(text==false) {
+		System.out.println("'Upto 9 passengers allowed' not Displayed");	
+		}
+		
 	}
 }

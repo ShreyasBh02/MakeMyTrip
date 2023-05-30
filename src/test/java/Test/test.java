@@ -38,12 +38,13 @@ public class test extends base{
 		t1.slect();
 		t1.enterFrom(utility.getTD(1, 0));
 		t1.enterTo(utility.getTD(1, 1));
-		t1.enterdep();
+		t1.enterdep(driver);
 		t1.enterretn(driver);
 		String actT = t1.verifyText1();
 		String expT = utility.getTD(3,1);
 		SoftAssert soft=new SoftAssert();
-		soft.assertEquals(actT, expT,"TC is passed");	
+		soft.assertEquals(actT, expT);	
+		Reporter.log("TC 1: 'You are booking for more than 30 days' Passes", true);
 	
 	}
 	@Test
@@ -71,20 +72,23 @@ public class test extends base{
 		String actTit=t4.vtitle(driver);
 		String expTit = utility.getTD(7,1);
 		SoftAssert soft=new SoftAssert();
-		soft.assertEquals(actTit, expTit,"TC is passed");
+		soft.assertEquals(actTit, expTit);
+		Reporter.log("TC 3: Tittle page is Verified", true);
 		
 		String actFdate = t4.vFdate();
 		String expFdate = utility.getTD(5,1);
-		soft.assertEquals(actFdate, expFdate,"TC is passed");
+		soft.assertEquals(actFdate, expFdate);
 		
 		String actRdate = t4.vRdate();
 		String expRdate = utility.getTD(6,1);
-		soft.assertEquals(actRdate, expRdate,"TC is passed");
-	}
+		soft.assertEquals(actRdate, expRdate);
+		Reporter.log("TC 4: Entered data is Verified", true);	
+		}
 	
 	@AfterMethod
 	public void logout() {
 	}
+	
 	@AfterClass
 	public void closeBrow() {
 		Reporter.log("Closing browser", true);

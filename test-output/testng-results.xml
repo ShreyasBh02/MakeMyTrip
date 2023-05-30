@@ -2,67 +2,85 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
+      <![CDATA[TC 1: 'You are booking for more than 30 days' Passes]]>
+    </line>
+    <line>
+      <![CDATA[TC 3: Tittle page is Verified]]>
+    </line>
+    <line>
+      <![CDATA[TC 4: Entered data is Verified]]>
+    </line>
+    <line>
       <![CDATA[Closing browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-20T12:27:35 IST" name="Default suite" finished-at="2023-05-20T12:30:40 IST" duration-ms="185326">
+  <suite started-at="2023-05-30T14:22:32 IST" name="Default suite" finished-at="2023-05-30T14:25:35 IST" duration-ms="183588">
     <groups>
     </groups>
-    <test started-at="2023-05-20T12:27:35 IST" name="Default test" finished-at="2023-05-20T12:30:40 IST" duration-ms="185326">
+    <test started-at="2023-05-30T14:22:32 IST" name="Default test" finished-at="2023-05-30T14:25:35 IST" duration-ms="183588">
       <class name="Test.test">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:27:35 IST" name="OpenBrowser" finished-at="2023-05-20T12:28:05 IST" duration-ms="30448" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:22:32 IST" name="OpenBrowser" finished-at="2023-05-30T14:23:01 IST" duration-ms="28954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:28:05 IST" name="OpenApp" finished-at="2023-05-20T12:28:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:23:01 IST" name="OpenApp" finished-at="2023-05-30T14:23:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method signature="verifyText1()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:28:05 IST" name="verifyText1" finished-at="2023-05-20T12:29:13 IST" duration-ms="67666" status="PASS">
+        <test-method signature="verifyText1()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:23:01 IST" name="verifyText1" finished-at="2023-05-30T14:24:23 IST" duration-ms="82199" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[TC 1: 'You are booking for more than 30 days' Passes]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyText1 -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:29:13 IST" name="logout" finished-at="2023-05-20T12:29:13 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:24:23 IST" name="logout" finished-at="2023-05-30T14:24:23 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:29:13 IST" name="OpenApp" finished-at="2023-05-20T12:29:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:24:23 IST" name="OpenApp" finished-at="2023-05-30T14:24:23 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method signature="verifyText2()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:29:13 IST" name="verifyText2" finished-at="2023-05-20T12:29:14 IST" duration-ms="1226" status="PASS">
+        <test-method signature="verifyText2()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:24:23 IST" name="verifyText2" finished-at="2023-05-30T14:24:26 IST" duration-ms="2672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyText2 -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:29:14 IST" name="logout" finished-at="2023-05-20T12:29:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:24:26 IST" name="logout" finished-at="2023-05-30T14:24:26 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="verifyText3()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:29:14 IST" name="verifyText3" finished-at="2023-05-20T12:30:34 IST" duration-ms="80039" status="PASS">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:24:26 IST" name="OpenApp" finished-at="2023-05-30T14:24:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApp -->
+        <test-method signature="verifyText3()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:24:26 IST" name="verifyText3" finished-at="2023-05-30T14:25:26 IST" duration-ms="60347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyText3 -->
-        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:29:14 IST" name="OpenApp" finished-at="2023-05-20T12:29:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenApp -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:30:34 IST" name="logout" finished-at="2023-05-20T12:30:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:25:26 IST" name="logout" finished-at="2023-05-30T14:25:26 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:30:34 IST" name="OpenApp" finished-at="2023-05-20T12:30:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:25:26 IST" name="OpenApp" finished-at="2023-05-30T14:25:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method signature="verifyText4()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:30:34 IST" name="verifyText4" finished-at="2023-05-20T12:30:40 IST" duration-ms="5784" status="PASS">
+        <test-method signature="verifyText4()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:25:26 IST" name="verifyText4" finished-at="2023-05-30T14:25:33 IST" duration-ms="6800" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[TC 3: Tittle page is Verified]]>
+            </line>
+            <line>
+              <![CDATA[TC 4: Entered data is Verified]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyText4 -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:30:40 IST" name="logout" finished-at="2023-05-20T12:30:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:25:33 IST" name="logout" finished-at="2023-05-30T14:25:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrow()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-20T12:30:40 IST" name="closeBrow" finished-at="2023-05-20T12:30:40 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeBrow()[pri:0, instance:Test.test@7f485fda]" started-at="2023-05-30T14:25:33 IST" name="closeBrow" finished-at="2023-05-30T14:25:35 IST" duration-ms="2212" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing browser]]>

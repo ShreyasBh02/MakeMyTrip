@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,12 +12,11 @@ import org.openqa.selenium.support.PageFactory;
 public class tc01{
 
 	//Declaration
-	@FindBy(xpath = "//i[@class='wewidgeticon we_close']") private WebElement cncle;
+	@FindBy(xpath = "//div[@class='imageSlideContainer']") private WebElement cncle;
 	@FindBy(xpath = "//li[text()='Round Trip']") private WebElement rondtrip;
 	@FindBy(xpath = "//input[@id='fromCity']") private WebElement org;
 	@FindBy(xpath = "//input[@id='toCity']") private WebElement dest;
-	@FindBy(xpath = "//span[text()='Departure']") private WebElement depClick;
-	@FindBy(xpath = "//div[@class='DayPicker-Day'][contains(@aria-label,' Jun 01 2023')]") private WebElement depDate;
+	@FindBy(xpath = "//span[@class='lbl_input appendBottom10'][contains(text(),'Departure')]") private WebElement depClick;
 	@FindBy(xpath = "//p[text()='You are booking for more than 30 days']") private WebElement text;
 	
 	//Initialization
@@ -27,9 +25,6 @@ public class tc01{
 	}
  
 	//Implementation
-	public void clkcnle(WebDriver driver) {
-		driver.switchTo().frame("notification-frame-b8a69a19").close();
-	}
 	public void slect() {
 		rondtrip.click();
 	}
@@ -42,13 +37,22 @@ public class tc01{
 		dest.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
 	}
 
-	public void enterdep() throws Throwable {
+	public void enterdep(WebDriver driver) throws Throwable {
 		depClick.click();
-		Thread.sleep(6000);
-		depDate.click();;
+		String dateDES="False";
+		while(dateDES=="False") {
+			if(driver.findElements(By.xpath("//div[@class='DayPicker-Day'][contains(@aria-label,' Jun 02 2023')]")).size()>0) {
+				driver.findElement(By.xpath("//div[@class='DayPicker-Day'][contains(@aria-label,' Jun 02 2023')]")).click();
+				dateDES="True";
+			}
+			else {
+				Thread.sleep(5000);
+				driver.findElement(By.xpath("//span[@class='DayPicker-NavButton DayPicker-NavButton--next']")).click();
+			}
+		}
 	}
+	
 	public void enterretn(WebDriver driver) throws Throwable {
-		
 		String dateDES="False";
 		while(dateDES=="False") {
 			if(driver.findElements(By.xpath("//div[@class='DayPicker-Day'][contains(@aria-label,' Sep 05 2023')]")).size()>0) {
